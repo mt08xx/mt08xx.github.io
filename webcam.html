@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webcam Test</title>
+</head>
+<body>
+  <video id="videoIn" autoplay></video>
+  <script type="text/javascript">
+  var p = navigator.mediaDevices.getUserMedia({ video: true });
+  p.then(function(stream){document.getElementById("videoIn").srcObject = stream;});
+</script>
+</body>
+</html>
